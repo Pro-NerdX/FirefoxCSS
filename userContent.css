@@ -1,0 +1,61 @@
+/* NEW TABS BACKGROUND */
+@-moz-document url("about:newtab"), url("about:home"), url(about:privatebrowsing) {
+	/* Sets background image and autoscale image to browser window. */
+	body {
+		background-image: url("wallpapers/desertPlanet.png") !important;
+		background-size: cover !important;
+		background-repeat: no-repeat !important;
+		background-attachment: fixed !important;
+		background-position-x: center !important;
+		background-position-y: bottom !important;
+	}
+}
+
+/* CURSOR */
+a, button, input[type="button"], input[type="submit"], [role="button"], .clickable {
+	cursor: url("cursors/Link\ Select\ OLD.cur"), auto !important;
+}
+
+/* LICHESS */
+@-moz-document url("https://lichess.org/") {
+	/* Makes the background completely black */
+	#top {
+		background-color: black;
+	}
+	#main-wrap {
+		background-color: black;
+	}
+
+	/* Lichess -> Lobby/Fernschach -> Table */
+	.hooks__list {
+		background-image: url("wallpapers/desertPlanet.png") !important;
+		background-size: 150%;
+		background-repeat: no-repeat;
+		background-position-x: center;
+	}
+}
+
+
+
+/* NOT FINISHED YET */
+
+/* TODO: YOUTUBE */
+@-moz-document url("https://www.youtube.com/") {
+	/* Removes the link from the box */
+	#text-container .style-scope .ytd-feed-nudge-renderer a {
+		text-indent: -9999px;
+	}
+
+	/* Removes the text from the box */
+	#text-container .style-scope .ytd-feed-nudge-renderer {
+		color: transparent;
+	}
+
+	/* TODO: Setup for the image */
+	#text-container .style-scope .ytd-feed-nudge-renderer #subtitle-container {
+		background-image: url("youtube/glowingRock1.png") !important;
+		background-size: 30%;
+		background-repeat: no-repeat;
+		background-position-x: center;
+	}
+}
