@@ -50,6 +50,18 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 		color: white; /* Text color */
 		text-shadow: 0 0 3px #0096d1, 0 0 6px #0096d1, 0 0 8px #0096d1;
 	}
+
+	/* Glowing font for "Latest changes" */
+	.TimelineItem-body.mt-n1 a {
+		color: white;
+		text-shadow: 0 0 1.5px #ff00d4, 0 0 3px #ff00d4, 0 0 4px #ff00d4;
+	}
+
+	/* Glowing font for captions (h2) */
+	.d-flex.flex-justify-between.flex-items-center h2 {
+		color: white;
+		text-shadow: 0 0 2px #00a050, 0 0 3.5px #00a050, 0 0 4.5px #00a050;
+	}
 }
 
 
