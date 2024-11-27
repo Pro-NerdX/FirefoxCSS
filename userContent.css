@@ -66,59 +66,15 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 
 /* YOUTUBE */
 @-moz-document url("https://www.youtube.com/") {
-	/* Background */
-	.ytd-app {
-		background-color: black !important;
-		background-image: url("wallpapers/desertPlanet.png") !important;
-		background-repeat: no-repeat !important;
-		background-size: 100% !important;
-		/*overflow: visible !important;*/
-	}
-	.ytd-masthead {
-		background-color: black !important;
-	}
-	.ytd-feed-nudge-renderer {
-		visibility: hidden !important;
-	}
-	/*.ytd-browse {
-		visibility: hidden !important;
-		background: black !important;
-	}
-	.ytd-rich-grid-renderer {
-		visibility: hidden !important;
-	}
-	.style-scope.ytd-rich-shelf-renderer {
-		visibility: hidden !important;
-	}*/
-	#contents {
-		display: none !important;
-	}
-	.ytd-browse {
-		display: none !important;
-	}
-
 	/* Glowing fonts */
 	.ytd-guide-entry-renderer {
 		color: white !important;
-		text-shadow: 0 0 1.5px rgb(231, 92, 0), 0 0 3px rgb(231, 92, 0), 0 0 4px rgb(231, 92, 0);
-	}
-}
-@-moz-document url("https://www.youtube.com/account") {
-	/* Background */
-	.ytd-app {
-		background-color: black !important;
-		background-image: url("wallpapers/desertPlanet.png") !important;
-		background-repeat: no-repeat !important;
-		background-size: cover !important;
-		overflow-y: visible !important;
-	}
-	.ytd-masthead {
-		background-color: black !important;
+		text-shadow: 0 0 1.5px rgb(207, 0, 0), 0 0 3px rgb(207, 0, 0), 0 0 4px rgb(207, 0, 0);
 	}
 
-	/* Settings */
-	.yt-icon .style-scope.ytd-page-introduction-renderer span div svg {
-		visibility: hidden !important;
+	/* Remove turning Watch History on */
+	#dismissible {
+		visibility: hidden;
 	}
 }
 
