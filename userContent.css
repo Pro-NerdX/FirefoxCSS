@@ -64,6 +64,75 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 	}
 }
 
+/* OVERLEAF */
+@-moz-document url("https://www.overleaf.com/project") {
+	/* Change color of buttons */
+	#new-project-button-sidebar.new-project-button.dropdown-toggle.btn.btn-primary {
+		background-color: rgb(0, 220, 220) !important;
+	}
+	.d-inline-grid.btn.btn-primary {
+		background-color: rgb(0, 220, 220) !important;
+	}
+	/* Hover */
+	#new-project-button-sidebar.new-project-button.dropdown-toggle.btn.btn-primary:hover {
+		background-color: rgb(0, 162, 162) !important;
+	}
+	.d-inline-grid.btn.btn-primary:hover {
+		background-color: rgb(0, 162, 162) !important;
+	}
+	.nav-item a:hover {
+		background-color: rgb(0, 220, 220) !important;
+		border-color: rgb(0, 220, 220) !important;
+	}
+	.dropdown button:hover {
+		background-color: rgb(0, 220, 220) !important;
+		border-color: rgb(0, 220, 220) !important;
+	}
+	
+	/* Darkmode: Backgrounds */
+	.project-list-main-react {
+		background-color: rgb(0, 22, 26);
+	}
+	.table-container.table-container-bordered {
+		background-color: rgb(0, 28, 33) !important;
+	}
+	.visually-hidden-max-md tr th {
+		background-color: rgb(0, 28, 33) !important;
+	}
+	.project-dash-table.table.table-hover tbody tr td {
+		background-color: rgb(0, 28, 33) !important;
+	}
+
+	/* TODO: Fix Darkmode: Hover */
+	.project-dash-table.table.table-hover tbody tr:hover td {
+		background-color: rgb(31, 31, 31) !important;
+	}
+	.project-dash-table.table.table-hover tbody tr:focus td {
+		background-color: rgb(31, 31, 31) !important;
+	}
+	.project-dash-table.table.table-hover tbody tr:active td {
+		background-color: rgb(31, 31, 31) !important;
+	}
+
+	/* Glowing color for links */
+	.dash-cell-name a {
+		color: white !important;
+		text-shadow: 0 0 1.5px rgb(0, 220, 220), 0 0 3px rgb(0, 220, 220), 0 0 4px rgb(0, 220, 220);
+	}
+
+	/* Caption style */
+	.project-list-title.text-truncate.d-none.d-md-block {
+		color: white !important;
+		text-shadow: 0 0 3px rgb(0, 72, 255), 0 0 6px rgb(0, 72, 255), 0 0 8px rgb(0, 72, 255);
+		overflow: visible !important;
+	}
+
+	/* Search bar */
+	.project-search div div div input {
+		background-color: rgb(0, 0, 0) !important;
+	}
+}
+
 
 
 /* NOT FINISHED YET */
