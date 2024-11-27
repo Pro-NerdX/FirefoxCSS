@@ -27,11 +27,13 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 	}
 
 	/* Lichess -> Lobby/Fernschach -> Table */
-	.hooks__list {
-		background-image: url("wallpapers/desertPlanet.png") !important;
-		background-size: 150%;
-		background-repeat: no-repeat;
-		background-position-x: center;
+	.lobby__app__content.lreal_time {
+		background: none !important;
+		background-color: rgba(0, 0, 0, 0) !important;
+	}
+	.lobby__app__content.lseeks {
+		background: none !important;
+		background-color: rgba(0, 0, 0, 0) !important;
 	}
 
 	/* Lichess -> Schnelles Spiel */
@@ -40,6 +42,38 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 		background-size: 77.5%;
 		background-repeat: no-repeat;
 		background-position-x: center;
+	}
+
+	/* Middle Buttons */
+	.lobby__app__content.lpools div[role="button"] {
+		border-width: 1px !important;
+		border-style: solid !important;
+		border-color: /*rgb(255, 98, 0)*/ white !important;
+		color: white !important;
+		text-shadow: 0 0 1.5px rgb(174, 174, 174), 0 0 3px rgb(174, 174, 174), 0 0 4px rgb(174, 174, 174) !important;		
+
+		background-color: rgba(0, 0, 0, 0.5) !important;
+	}
+	/* Middle Buttons (hover) */
+	.lobby__app__content.lpools div[role="button"]:hover {
+		background-color: rgba(0, 0, 0, 0) !important;
+	}
+
+	/* Left-side Buttons */
+	.button.button-metal {
+		border-width: 1px !important;
+		border-style: solid !important;
+		border-color: rgb(255, 98, 0) !important;
+
+		color: white !important;
+		text-shadow: 0 0 1.5px rgb(255, 98, 0), 0 0 3px rgb(255, 98, 0), 0 0 4px rgb(255, 98, 0) !important;
+		overflow: visible !important;
+		background: none !important;
+		background-color: rgba(0, 0, 0, 0) !important;
+	}
+	/* Left-side Buttons (hover) */
+	.button.button-metal:hover {
+		background-color: rgba(255, 98, 0, 0.25) !important;
 	}
 }
 
