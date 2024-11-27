@@ -64,7 +64,67 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 	}
 }
 
-/* OVERLEAF */
+/* YOUTUBE */
+@-moz-document url("https://www.youtube.com/") {
+	/* Background */
+	.ytd-app {
+		background-color: black !important;
+		background-image: url("wallpapers/desertPlanet.png") !important;
+		background-repeat: no-repeat !important;
+		background-size: 100% !important;
+		/*overflow: visible !important;*/
+	}
+	.ytd-masthead {
+		background-color: black !important;
+	}
+	.ytd-feed-nudge-renderer {
+		visibility: hidden !important;
+	}
+	/*.ytd-browse {
+		visibility: hidden !important;
+		background: black !important;
+	}
+	.ytd-rich-grid-renderer {
+		visibility: hidden !important;
+	}
+	.style-scope.ytd-rich-shelf-renderer {
+		visibility: hidden !important;
+	}*/
+	#contents {
+		display: none !important;
+	}
+	.ytd-browse {
+		display: none !important;
+	}
+
+	/* Glowing fonts */
+	.ytd-guide-entry-renderer {
+		color: white !important;
+		text-shadow: 0 0 1.5px rgb(231, 92, 0), 0 0 3px rgb(231, 92, 0), 0 0 4px rgb(231, 92, 0);
+	}
+}
+@-moz-document url("https://www.youtube.com/account") {
+	/* Background */
+	.ytd-app {
+		background-color: black !important;
+		background-image: url("wallpapers/desertPlanet.png") !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		overflow-y: visible !important;
+	}
+	.ytd-masthead {
+		background-color: black !important;
+	}
+
+	/* Settings */
+	.yt-icon .style-scope.ytd-page-introduction-renderer span div svg {
+		visibility: hidden !important;
+	}
+}
+
+
+
+/* OVERLEAF (not finished yet) */
 @-moz-document url("https://www.overleaf.com/project") {
 	/* Change color of buttons */
 	#new-project-button-sidebar.new-project-button.dropdown-toggle.btn.btn-primary {
@@ -117,7 +177,7 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 	/* Glowing color for links */
 	.dash-cell-name a {
 		color: white !important;
-		text-shadow: 0 0 1.5px rgb(0, 220, 220), 0 0 3px rgb(0, 220, 220), 0 0 4px rgb(0, 220, 220);
+		text-shadow: 0 0 1.5px rgb(0, 184, 184), 0 0 3px rgb(0, 184, 184), 0 0 4px rgb(0, 184, 184);
 	}
 
 	/* Caption style */
@@ -130,30 +190,5 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 	/* Search bar */
 	.project-search div div div input {
 		background-color: rgb(0, 0, 0) !important;
-	}
-}
-
-
-
-/* NOT FINISHED YET */
-
-/* TODO: YOUTUBE */
-@-moz-document url("https://www.youtube.com/") {
-	/* Removes the link from the box */
-	#text-container .style-scope .ytd-feed-nudge-renderer a {
-		text-indent: -9999px;
-	}
-
-	/* Removes the text from the box */
-	#text-container .style-scope .ytd-feed-nudge-renderer {
-		color: transparent;
-	}
-
-	/* TODO: Setup for the image */
-	#text-container .style-scope .ytd-feed-nudge-renderer #subtitle-container {
-		background-image: url("youtube/glowingRock1.png") !important;
-		background-size: 30%;
-		background-repeat: no-repeat;
-		background-position-x: center;
 	}
 }
