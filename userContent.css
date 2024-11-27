@@ -33,6 +33,23 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 		background-repeat: no-repeat;
 		background-position-x: center;
 	}
+
+	/* Lichess -> Schnelles Spiel */
+	#main-wrap {
+		background-image: url("wallpapers/desertPlanet.png") !important;
+		background-size: 77.5%;
+		background-repeat: no-repeat;
+		background-position-x: center;
+	}
+}
+
+/* GITHUB */
+@-moz-document url("https://github.com/") {
+	/* Glowing font for "Top repositories" */
+	.wb-break-word {
+		color: white; /* Text color */
+		text-shadow: 0 0 3px #0096d1, 0 0 6px #0096d1, 0 0 8px #0096d1;
+	}
 }
 
 
