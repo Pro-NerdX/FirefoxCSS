@@ -174,10 +174,22 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 		background-color: rgb(31, 31, 31) !important;
 	}
 
+	/* Form check input */
+	.form-check-input {
+		background-color: black !important;
+	}
+
 	/* Glowing color for links */
 	.dash-cell-name a {
 		color: white !important;
 		text-shadow: 0 0 1.5px rgb(0, 184, 184), 0 0 3px rgb(0, 184, 184), 0 0 4px rgb(0, 184, 184);
+	}
+
+	/* Glowing color for side bar */
+	.list-unstyled.project-list-filters li button {
+		color: white !important;
+		text-shadow: 0 0 3px rgb(0, 72, 255), 0 0 6px rgb(0, 72, 255), 0 0 8px rgb(0, 72, 255);
+		overflow: visible !important;
 	}
 
 	/* Caption style */
@@ -187,8 +199,40 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 		overflow: visible !important;
 	}
 
+	/* "New Tag" Pop-up */
+	.modal-content {
+		background-color: rgb(0, 25, 25) !important;
+	}
+	.modal-header button {
+		color: white !important;
+	}
+	.modal-title {
+		color: white !important;
+		text-shadow: 0 0 3px rgb(0, 72, 255), 0 0 6px rgb(0, 72, 255), 0 0 8px rgb(0, 72, 255);
+		overflow: visible !important;
+	}
+	.form-label {
+		color: white !important;
+		text-shadow: 0 0 1.5px rgb(0, 184, 184), 0 0 3px rgb(0, 184, 184), 0 0 4px rgb(0, 184, 184);
+		overflow: visible !important;
+	}
+
 	/* Search bar */
 	.project-search div div div input {
 		background-color: rgb(0, 0, 0) !important;
+	}
+	/* Search bar content */
+	.form-control-offset-start.form-control-offset-end.form-control {
+		color: white !important;
+	}
+	/* Search results */
+	.row-spaced.row div div p span {
+		color: white !important;
+		text-shadow: 0 0 1.5px rgb(0, 184, 184), 0 0 3px rgb(0, 184, 184), 0 0 4px rgb(0, 184, 184);
+		overflow: visible !important;
+	}
+	.row-spaced.row div div p button span {
+		color: rgb(0, 72, 255) !important;
+		text-shadow: none !important;
 	}
 }
