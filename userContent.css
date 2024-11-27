@@ -73,8 +73,15 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 	}
 
 	/* Remove turning Watch History on */
-	#dismissible {
+	.ytd-feed-nudge-renderer div {
 		visibility: hidden;
+	}
+	.ytd-feed-nudge-renderer {
+		background-image: url("wallpapers/desertPlanet.png") !important;
+		background-size: 500px !important;
+		background-repeat: no-repeat !important;
+		width: 500px !important;
+		height: 250px !important;
 	}
 }
 
