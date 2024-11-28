@@ -9,6 +9,15 @@
 		background-position-x: center !important;
 		background-position-y: bottom !important;
 	}
+	/* Makes the background of pop-up settings window more transparent */
+	.customize-menu.customize-animate-enter-done {
+		background: none !important;
+		background-color: rgba(0, 0, 0, 0.375) !important;
+	}
+	.close-button-wrapper {
+		background: none !important;
+		background-color: rgba(0, 0, 0, 0.375) !important;
+	}
 }
 /* SETTINGS BACKGROUND */
 @-moz-document url("about:preferences#general"), url("about:preferences#home"), url("about:preferences#search"), url("about:preferences#privacy"), url("about:preferences#sync"), url("about:preferences#experimental"), url("about:preferences#moreFromMozilla"), url("about:addons") {
