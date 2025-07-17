@@ -56,9 +56,9 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 	cursor: url("cursors/Link\ Select\ OLD.cur"), auto !important;
 }
 
-/* LICHESS */
-@-moz-document url-prefix("https://lichess.org/") {
-	/* Makes the background completely black */
+/* LICHESS - DESERT PLANET THEME */
+/*@-moz-document url-prefix("https://lichess.org/") {
+	/* Makes the background completely black * /
 	#top {
 		background-color: black;
 	}
@@ -66,7 +66,7 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 		background-color: black;
 	}
 
-	/* Lichess -> Lobby/Fernschach -> Table */
+	/* Lichess -> Lobby/Fernschach -> Table * /
 	.lobby__app__content.lreal_time {
 		background: none !important;
 		background-color: rgba(0, 0, 0, 0) !important;
@@ -76,7 +76,7 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 		background-color: rgba(0, 0, 0, 0) !important;
 	}
 
-	/* Lichess -> Schnelles Spiel */
+	/* Lichess -> Schnelles Spiel * /
 	#main-wrap {
 		background-image: url("wallpapers/desertPlanet.png") !important;
 		background-size: 77.5%;
@@ -84,22 +84,22 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 		background-position-x: center;
 	}
 
-	/* Middle Buttons */
+	/* Middle Buttons * /
 	.lobby__app__content.lpools div[role="button"] {
 		border-width: 1px !important;
 		border-style: solid !important;
-		border-color: /*rgb(255, 98, 0)*/ white !important;
+		border-color: /*rgb(255, 98, 0)* / white !important;
 		color: white !important;	
 
 		background-color: rgba(0, 0, 0, 0.5) !important;
 	}
-	/* Middle Buttons (hover) */
+	/* Middle Buttons (hover) * /
 	.lobby__app__content.lpools div[role="button"]:hover {
 		background-color: rgba(0, 0, 0, 0) !important;
 		text-shadow: 0 0 1.5px rgb(174, 174, 174), 0 0 3px rgb(174, 174, 174), 0 0 4px rgb(174, 174, 174) !important;
 	}
 
-	/* Left-side Buttons */
+	/* Left-side Buttons * /
 	.button.button-metal {
 		border-width: 1px !important;
 		border-style: solid !important;
@@ -111,12 +111,12 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 		background: none !important;
 		background-color: rgba(0, 0, 0, 0) !important;
 	}
-	/* Left-side Buttons (hover) */
+	/* Left-side Buttons (hover) * /
 	.button.button-metal:hover {
 		background-color: rgba(255, 98, 0, 0.25) !important;
 	}
 
-	/* Links (hover) */
+	/* Links (hover) * /
 	.entry:hover a {
 		color: rgb(255, 98, 0) !important;
 	}
@@ -126,7 +126,7 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 		overflow: visible !important;
 	}
 
-	/* Tournaments */
+	/* Tournaments * /
 	.lobby__spotlights a {
 		background: none !important;
 		background-color: rgba(0, 0, 0, 0.5) !important;
@@ -134,12 +134,12 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 		border-color: gray !important;
 		border-width: 2px !important;
 	}
-	/* Tournaments (hover) */
+	/* Tournaments (hover) * /
 	.lobby__spotlights a:hover span {
 		color: rgb(255, 98, 0) !important;
 	}
 
-	/* Top nav bar (hover) */
+	/* Top nav bar (hover) * /
 	nav#topnav {
 		border-color: rgb(255, 98, 0) !important;
 	}
@@ -153,7 +153,7 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 		background-color: rgb(255, 98, 0) !important;
 	}
 
-	/* Puzzle */
+	/* Puzzle * /
 	div.puzzle__side__user {
 		background: none !important;
 		background-color: rgba(0, 0, 0, 0);
@@ -181,6 +181,103 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 	div.puzzle__side__theme a:hover {
 		color: white;
 		text-shadow: 0 0 1.5px rgb(255, 98, 0), 0 0 3px rgb(255, 98, 0), 0 0 4px rgb(255, 98, 0) !important;
+	}
+}*/
+
+/* LICHESS - SYNTH WAVE */
+@-moz-document url-prefix("https://lichess.org/") {
+	/* Make background fully black */
+	#top {
+		background-color: black;
+	}
+	#main-wrap {
+		background-color: black;
+		background-image: url("wallpapers/synthwaveRingedPlanet.png") !important;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position-x: center;
+	}
+	
+	/* Middle Buttons */
+	/* Schnelles Spiel */
+	.lobby__app__content.lpools div[role="button"] {
+		border-width: 1px !important;
+		border-style: solid !important;
+		border-color: white !important;
+		
+		color: white !important;
+		text-shadow: 0 0 3px #6700CC, 0 0 6px #6700CC, 0 0 8px #6700CC !important;
+
+		background-color: rgba(0, 0, 0, 0.5) !important;
+	}
+	.lobby__app__content.lpools div[role="button"]:hover {
+		box-shadow:
+    		0 0 3px #0063FF,
+    		0 0 6px #0063FF,
+    		0 0 8px #0063FF !important;
+		background-color: rgba(0, 255, 255, 0.25) !important;
+	}
+	/* Lobby */
+	.lobby__app__content.lreal_time {
+		box-shadow:
+    		0 0 3px #0063FF,
+    		0 0 6px #0063FF,
+    		0 0 8px #0063FF !important;
+		background-color: rgba(0, 0, 0, 0.5) !important;
+
+		color: white !important;
+		text-shadow: 0 0 3px #6700CC, 0 0 6px #6700CC, 0 0 8px #6700CC !important;
+	}
+	tbody .hook.join:hover td {
+		background-color: rgba(0, 255, 255, 0.25) !important;
+	}
+	/* Fernschach */
+	.lobby__app__content.lseeks {
+		box-shadow:
+    		0 0 3px #0063FF,
+    		0 0 6px #0063FF,
+    		0 0 8px #0063FF !important;
+		background-color: rgba(0, 0, 0, 0.5) !important;
+
+		color: white !important;
+		text-shadow: 0 0 3px #6700CC, 0 0 6px #6700CC, 0 0 8px #6700CC !important;
+	}
+	tbody .seek.join:hover td {
+		background-color: rgba(0, 255, 255, 0.25) !important;
+	}
+
+	/* Tabs above middle buttons */
+	.tabs-horiz span {
+		color: white !important;
+		border-color: rgba(0, 255, 255, 0) !important;
+	}
+	.tabs-horiz span:hover {
+		color: white !important;
+		text-shadow: 0 0 3px rgba(0, 255, 255, 0.5), 0 0 6px rgba(0, 255, 255, 0.5), 0 0 8px rgba(0, 255, 255, 0.5) !important;
+	}
+	.tabs-horiz .active {
+		color: cyan !important;
+	}
+
+	/* Right buttons */
+	.lobby__start button {
+		background: none !important;
+		color: white !important;
+	}
+	.lobby__start button:hover {
+		text-shadow: 0 0 3px rgba(0, 255, 255, 0.5), 0 0 6px rgba(0, 255, 255, 0.5), 0 0 8px rgba(0, 255, 255, 0.5) !important;
+	}
+
+	/* Left side */
+	.lobby__spotlights a {
+		color: white !important;
+		text-shadow: 0 0 3px #6700CC, 0 0 6px #6700CC, 0 0 8px #6700CC !important;
+		background: none !important;
+	}
+
+	/* Boards */
+	square .black {
+		background-color: rgba(0, 0, 0, 0) !important;
 	}
 }
 
@@ -335,6 +432,64 @@ a, button, input[type="button"], input[type="submit"], [role="button"], .clickab
 		text-shadow: none !important;
 	}
 }*/
+
+
+
+/* OVERLEAF (new) */
+@-moz-document url("https://www.overleaf.com/project") {
+	/* Hide link in top left corner */
+	.navbar-header {
+		display: none !important;
+	}
+
+	/* Background color */
+	#project-list-root {
+		background-color: #202020 !important;
+	}
+	#navbar-main-collapse {
+		background-color: #202020 !important;
+	}
+	.navbar-default.navbar-main.navbar.navbar-expand-lg.navbar-light {
+		padding: 0 !important;
+	}
+
+	/* Project list */
+	.project-ds-nav-content {
+		border-width: 2px !important;
+		border-color: white !important;
+		background-color: #202020 !important;
+	}
+	/* "All Projects" */
+	.project-list-title.text-truncate.d-none.d-md-block {
+		color: white !important;
+		text-shadow: 0 0 3px rgb(0, 225, 255), 0 0 6px rgb(0, 225, 255), 0 0 8px rgb(0, 225, 255);
+		overflow: visible !important;
+	}
+
+	/* "New Project" */
+	#new-project-button-sidebar {
+		width: 100px;
+		height: 175px;
+		border-width: 2px !important;
+		border-color: white !important;
+		border-radius: 50% !important;
+		align-items: center !important;
+		justify-content: center !important;
+		font-size: x-large !important;
+		background-color: #000 !important;
+	}
+
+	/* Buttons (left) */
+	.list-unstyled.project-list-filters li button {
+		color: white !important;
+	}
+	ul .active button {
+		background-color: rgb(0, 225, 255) !important;
+	}
+	.list-unstyled.project-list-filters li button:hover {
+		background-color: rgba(0, 225, 255, 0.6) !important;
+	}
+}
 
 
 
