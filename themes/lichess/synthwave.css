@@ -1,0 +1,97 @@
+/* LICHESS - SYNTH WAVE */
+@-moz-document url-prefix("https://lichess.org/") {
+	/* Make background fully black */
+	#top {
+		background-color: black;
+	}
+	#main-wrap {
+		background-color: black;
+		background-image: url("wallpapers/synthwaveRingedPlanet.png") !important;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position-x: center;
+	}
+	
+	/* Middle Buttons */
+	/* Schnelles Spiel */
+	.lobby__app__content.lpools div[role="button"] {
+		border-width: 1px !important;
+		border-style: solid !important;
+		border-color: white !important;
+		
+		color: white !important;
+		text-shadow: 0 0 3px #6700CC, 0 0 6px #6700CC, 0 0 8px #6700CC !important;
+
+		background-color: rgba(0, 0, 0, 0.5) !important;
+	}
+	.lobby__app__content.lpools div[role="button"]:hover {
+		box-shadow:
+    		0 0 3px #0063FF,
+    		0 0 6px #0063FF,
+    		0 0 8px #0063FF !important;
+		background-color: rgba(0, 255, 255, 0.25) !important;
+	}
+	/* Lobby */
+	.lobby__app__content.lreal_time {
+		box-shadow:
+    		0 0 3px #0063FF,
+    		0 0 6px #0063FF,
+    		0 0 8px #0063FF !important;
+		background-color: rgba(0, 0, 0, 0.5) !important;
+
+		color: white !important;
+		text-shadow: 0 0 3px #6700CC, 0 0 6px #6700CC, 0 0 8px #6700CC !important;
+	}
+	tbody .hook.join:hover td {
+		background-color: rgba(0, 255, 255, 0.25) !important;
+	}
+	/* Fernschach */
+	.lobby__app__content.lseeks {
+		box-shadow:
+    		0 0 3px #0063FF,
+    		0 0 6px #0063FF,
+    		0 0 8px #0063FF !important;
+		background-color: rgba(0, 0, 0, 0.5) !important;
+
+		color: white !important;
+		text-shadow: 0 0 3px #6700CC, 0 0 6px #6700CC, 0 0 8px #6700CC !important;
+	}
+	tbody .seek.join:hover td {
+		background-color: rgba(0, 255, 255, 0.25) !important;
+	}
+
+	/* Tabs above middle buttons */
+	.tabs-horiz span {
+		color: white !important;
+		border-color: rgba(0, 255, 255, 0) !important;
+	}
+	.tabs-horiz span:hover {
+		color: white !important;
+		text-shadow: 0 0 3px rgba(0, 255, 255, 0.5), 0 0 6px rgba(0, 255, 255, 0.5), 0 0 8px rgba(0, 255, 255, 0.5) !important;
+	}
+	.tabs-horiz .active {
+		color: cyan !important;
+	}
+
+	/* Right buttons */
+	.lobby__start button {
+		background: none !important;
+		color: white !important;
+	}
+	.lobby__start button:hover {
+		text-shadow: 0 0 3px rgba(0, 255, 255, 0.5), 0 0 6px rgba(0, 255, 255, 0.5), 0 0 8px rgba(0, 255, 255, 0.5) !important;
+	}
+
+	/* Left side */
+	.lobby__spotlights a {
+		color: white !important;
+		text-shadow: 0 0 3px #6700CC, 0 0 6px #6700CC, 0 0 8px #6700CC !important;
+		background: none !important;
+	}
+
+	/* Boards */
+	square .black {
+		background-color: rgba(0, 0, 0, 0) !important;
+	}
+}
+/* LICHESS - SYNTH WAVE */

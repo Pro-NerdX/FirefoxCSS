@@ -1,0 +1,1 @@
+This file literally only exists, because modern IDEs cannot handle a folder inside of an empty folder.
