@@ -1,0 +1,441 @@
+/* NEW TABS BACKGROUND */
+@-moz-document url("about:newtab"), url("about:home"), url(about:privatebrowsing) {
+	/* Sets background image and autoscale image to browser window. */
+	body {
+		background-image: url("wallpapers/desertPlanet.png") !important;
+		background-size: cover !important;
+		background-repeat: no-repeat !important;
+		background-attachment: fixed !important;
+		background-position-x: center !important;
+		background-position-y: bottom !important;
+	}
+	/* Makes the background of pop-up settings window more transparent */
+	.customize-menu.customize-animate-enter-done {
+		background: none !important;
+		background-color: rgba(0, 0, 0, 0.375) !important;
+	}
+	.close-button-wrapper {
+		background: none !important;
+		background-color: rgba(0, 0, 0, 0.375) !important;
+	}
+}
+/* SETTINGS BACKGROUND */
+@-moz-document url("about:preferences#general"), url("about:preferences#home"), url("about:preferences#search"), url("about:preferences#privacy"), url("about:preferences#sync"), url("about:preferences#experimental"), url("about:preferences#moreFromMozilla"), url("about:addons") {
+	/* Background */
+	body {
+		background: none !important;
+		background-image: url("wallpapers/sciFiPassage1.png") !important;
+		background-size: cover !important;
+		background-repeat: no-repeat !important;
+		background-attachment: fixed !important;
+		background-position-x: center !important;
+		background-position-y: bottom !important;
+	}
+	.sticky-container {
+		background: none !important;
+		background-color: rgba(0, 0, 0, 0) !important;
+	}
+	.main-search {	
+		background: none !important;
+		background-color: rgba(0, 0, 0, 0) !important;
+	}
+	.main-heading {	
+		background: none !important;
+		background-color: rgba(0, 0, 0, 0) !important;
+	}
+	/* Font fixing */
+	.category-name {
+		color: white !important;
+		text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000 !important;
+		overflow: visible !important;
+	}
+}
+
+/* CURSOR */
+a, button, input[type="button"], input[type="submit"], [role="button"], .clickable {
+	cursor: url("cursors/Link\ Select\ OLD.cur"), auto !important;
+}
+
+
+
+
+/* GITHUB */
+@-moz-document url("https://github.com/") {
+	/* Glowing font for "Top repositories" */
+	.wb-break-word {
+		color: white; /* Text color */
+		text-shadow: 0 0 3px #0096d1, 0 0 6px #0096d1, 0 0 8px #0096d1;
+	}
+
+	/* Glowing font for "Latest changes" */
+	.TimelineItem-body.mt-n1 a {
+		color: white;
+		text-shadow: 0 0 1.5px #ff00d4, 0 0 3px #ff00d4, 0 0 4px #ff00d4;
+	}
+
+	/* Glowing font for captions (h2) */
+	.d-flex.flex-justify-between.flex-items-center h2 {
+		color: white;
+		text-shadow: 0 0 2px #00a050, 0 0 3.5px #00a050, 0 0 4.5px #00a050;
+	}
+}
+
+/* YOUTUBE */
+@-moz-document url("https://www.youtube.com/") {
+	/* Glowing fonts */
+	.ytd-guide-entry-renderer {
+		color: white !important;
+		text-shadow: 0 0 1.5px rgb(207, 0, 0), 0 0 3px rgb(207, 0, 0), 0 0 4px rgb(207, 0, 0);
+	}
+
+	/* Remove turning Watch History on */
+	.ytd-feed-nudge-renderer div {
+		visibility: hidden;
+	}
+	.ytd-feed-nudge-renderer {
+		background-image: url("wallpapers/desertPlanet.png") !important;
+		background-size: 500px !important;
+		background-repeat: no-repeat !important;
+		width: 500px !important;
+		height: 250px !important;
+	}
+}
+
+
+
+/* OVERLEAF (old) */
+/*@-moz-document url("https://www.overleaf.com/project") {
+	/* Change color of buttons /
+	#new-project-button-sidebar.new-project-button.dropdown-toggle.btn.btn-primary {
+		background-color: rgb(0, 220, 220) !important;
+	}
+	.d-inline-grid.btn.btn-primary {
+		background-color: rgb(0, 220, 220) !important;
+	}
+	/* Hover /
+	#new-project-button-sidebar.new-project-button.dropdown-toggle.btn.btn-primary:hover {
+		background-color: rgb(0, 162, 162) !important;
+	}
+	.d-inline-grid.btn.btn-primary:hover {
+		background-color: rgb(0, 162, 162) !important;
+	}
+	.nav-item a:hover {
+		background-color: rgb(0, 220, 220) !important;
+		border-color: rgb(0, 220, 220) !important;
+	}
+	.dropdown button:hover {
+		background-color: rgb(0, 220, 220) !important;
+		border-color: rgb(0, 220, 220) !important;
+	}
+	
+	/* Darkmode: Backgrounds /
+	/*.project-list-main-react {
+		background-color: rgb(0, 22, 26);
+	}
+	.table-container.table-container-bordered {
+		background-color: rgb(0, 28, 33) !important;
+	}
+	.visually-hidden-max-md tr th {
+		background-color: rgb(0, 28, 33) !important;
+	}
+	.project-dash-table.table.table-hover tbody tr td {
+		background-color: rgb(0, 28, 33) !important;
+	}
+
+	/* TODO: Fix Darkmode: Hover /
+	tbody tr.table-active {
+		background: none !important;
+		background-color: rgb(31, 31, 31) !important;
+	}
+
+	/* Form check input /
+	.form-check-input {
+		background-color: black !important;
+	}
+
+	/* Glowing color for links /
+	.dash-cell-name a {
+		color: white !important;
+		text-shadow: 0 0 1.5px rgb(0, 184, 184), 0 0 3px rgb(0, 184, 184), 0 0 4px rgb(0, 184, 184);
+	}
+
+	/* Glowing color for side bar /
+	.list-unstyled.project-list-filters li button {
+		color: white !important;
+		text-shadow: 0 0 3px rgb(0, 72, 255), 0 0 6px rgb(0, 72, 255), 0 0 8px rgb(0, 72, 255);
+		overflow: visible !important;
+	}
+
+	/* Caption style /
+	.project-list-title.text-truncate.d-none.d-md-block {
+		color: white !important;
+		text-shadow: 0 0 3px rgb(0, 72, 255), 0 0 6px rgb(0, 72, 255), 0 0 8px rgb(0, 72, 255);
+		overflow: visible !important;
+	}
+
+	/* "New Tag" Pop-up /
+	.modal-content {
+		background-color: rgb(0, 25, 25) !important;
+	}
+	.modal-header button {
+		color: white !important;
+	}
+	.modal-title {
+		color: white !important;
+		text-shadow: 0 0 3px rgb(0, 72, 255), 0 0 6px rgb(0, 72, 255), 0 0 8px rgb(0, 72, 255);
+		overflow: visible !important;
+	}
+	.form-label {
+		color: white !important;
+		text-shadow: 0 0 1.5px rgb(0, 184, 184), 0 0 3px rgb(0, 184, 184), 0 0 4px rgb(0, 184, 184);
+		overflow: visible !important;
+	}
+
+	/* Search bar /
+	.project-search div div div input {
+		background-color: rgb(0, 0, 0) !important;
+	}
+	/* Search bar content /
+	.form-control-offset-start.form-control-offset-end.form-control {
+		color: white !important;
+	}
+	/* Search results /
+	.row-spaced.row div div p span {
+		color: white !important;
+		text-shadow: 0 0 1.5px rgb(0, 184, 184), 0 0 3px rgb(0, 184, 184), 0 0 4px rgb(0, 184, 184);
+		overflow: visible !important;
+	}
+	.row-spaced.row div div p button span {
+		color: rgb(0, 72, 255) !important;
+		text-shadow: none !important;
+	}
+}*/
+
+
+
+/* OVERLEAF (new) */
+@-moz-document url("https://www.overleaf.com/project") {
+	/* Hide link in top left corner */
+	.navbar-header {
+		display: none !important;
+	}
+
+	/* Background color */
+	#project-list-root {
+		background-color: #202020 !important;
+	}
+	#navbar-main-collapse {
+		background-color: #202020 !important;
+	}
+	.navbar-default.navbar-main.navbar.navbar-expand-lg.navbar-light {
+		padding: 0 !important;
+	}
+
+	/* Project list */
+	.project-ds-nav-content {
+		border-width: 2px !important;
+		border-color: white !important;
+		background-color: #202020 !important;
+	}
+	/* "All Projects" */
+	.project-list-title.text-truncate.d-none.d-md-block {
+		color: white !important;
+		text-shadow: 0 0 3px rgb(0, 225, 255), 0 0 6px rgb(0, 225, 255), 0 0 8px rgb(0, 225, 255);
+		overflow: visible !important;
+	}
+
+	/* "New Project" */
+	#new-project-button-sidebar {
+		width: 100px;
+		height: 175px;
+		border-width: 2px !important;
+		border-color: white !important;
+		border-radius: 50% !important;
+		align-items: center !important;
+		justify-content: center !important;
+		font-size: x-large !important;
+		background-color: #000 !important;
+	}
+
+	/* Buttons (left) */
+	.list-unstyled.project-list-filters li button {
+		color: white !important;
+	}
+	ul .active button {
+		background-color: rgb(0, 225, 255) !important;
+	}
+	.list-unstyled.project-list-filters li button:hover {
+		background-color: rgba(0, 225, 255, 0.6) !important;
+	}
+}
+
+
+
+/* WEBMAIL */
+@-moz-document url-prefix("https://webmail.hiz-saarland.de/") {
+	/* Remove light mode button (ONLY the light mode button) */
+	.theme.light {
+		display: none !important;
+	}
+
+	/* Remove home button */
+	.popover-header {
+		display: none !important;
+	}
+
+	/* Background */
+	body {
+		background-color: rgba(0, 0, 0, 1) !important;
+	}
+	.dark-mode {
+		background-color: #000 !important;
+	}
+	.about {
+		background-color: black !important;
+	}
+	.about:hover {
+		background-color: rgb(36, 36, 36) !important;
+	}
+	.logout {
+		background-color: black !important;
+		color: white !important;
+		text-shadow: 0 0 3px red, 0 0 6px red, 0 0 8px red;
+		overflow: visible !important;
+	}
+	.logout:hover {
+		background-color: rgba(255, 0, 0, 0.5) !important;
+	}
+	body.task-mail.action-preview {
+		background: none !important;
+		background-color: black !important;
+	}
+
+	/* Changing secondary color */
+	.compose {
+		color: lime !important;
+	}
+	.mail.selected {
+		color: lime !important;
+	}
+	.contacts {
+		color: lime !important;
+	}
+	.settings {
+		color: lime !important;
+	}
+	.compose:hover {
+		color: white !important;
+		text-shadow: 0 0 3px lime, 0 0 6px lime, 0 0 8px lime;
+		background-color: black !important;
+	}
+	.mail.selected:hover {
+		color: white !important;
+		text-shadow: 0 0 3px lime, 0 0 6px lime, 0 0 8px lime;
+		background-color: black !important;
+	}
+	.contacts:hover {
+		color: white !important;
+		text-shadow: 0 0 3px lime, 0 0 6px lime, 0 0 8px lime;
+		background-color: black !important;
+	}
+	.settings:hover {
+		color: white !important;
+		text-shadow: 0 0 3px lime, 0 0 6px lime, 0 0 8px lime;
+		background-color: black !important;
+	}
+	.compose[aria-disabled="true"] {
+		color: white !important;
+		text-shadow: 0 0 3px lime, 0 0 6px lime, 0 0 8px lime;
+		background-color: rgba(0, 255, 0, 0.5) !important;
+	}
+	.mail.selected[aria-disabled="true"] {
+		color: white !important;
+		text-shadow: 0 0 3px lime, 0 0 6px lime, 0 0 8px lime;
+		background-color: rgba(0, 255, 0, 0.5) !important;
+	}
+	.contacts[aria-disabled="true"] {
+		color: white !important;
+		text-shadow: 0 0 3px lime, 0 0 6px lime, 0 0 8px lime;
+		background-color: rgba(0, 255, 0, 0.5) !important;
+	}
+	.settings[aria-disabled="true"] {
+		color: white !important;
+		text-shadow: 0 0 3px lime, 0 0 6px lime, 0 0 8px lime;
+		background-color: rgba(0, 255, 0, 0.5) !important;
+	}
+
+	/* Scrollbar color */
+	.layout-list .column-resizer {
+		scrollbar-color: lime rgb(30, 30, 30) !important;
+	}
+
+	/* Login-Button */
+	#rcmloginsubmit {
+		border-color: lime !important;
+		border-width: 2px !important;
+
+		background-color: rgba(0, 255, 0, 0.3) !important;
+		color: white !important;
+	}
+	#rcmloginsubmit:hover {
+		background-color: rgba(0, 255, 0, 0.15) !important;
+		color: white !important;
+		text-shadow: 0 0 3px lime, 0 0 6px lime, 0 0 8px lime;
+		overflow: visible !important;
+	}
+
+	/* Login-Form */
+	#rcmloginuser {
+		background: none !important;
+		background-color: black !important;
+		color: white !important;
+	}
+
+	/* Remove hiz-logo */
+	#layout-content #logo {
+		visibility: hidden !important;
+	}
+
+	/* Links */
+	.support-link {
+		color: aqua !important;
+	}
+	.support-link:hover {
+		text-decoration: none !important;
+		color: white !important;
+		text-shadow: 0 0 3px aqua, 0 0 6px aqua, 0 0 8px aqua;
+		overflow: visible !important;
+	}
+	#login-footer b a {
+		color: aqua !important;
+	}
+	#login-footer b a:hover {
+		text-decoration: none !important;
+		color: white !important;
+		text-shadow: 0 0 3px aqua, 0 0 6px aqua, 0 0 8px aqua;
+		overflow: visible !important;
+	}
+
+	/* 2nd menu on the left */
+	/* SENDHELP */
+	ul#mailboxlist.treelist.listing.folderlist.notree {
+		border-style: solid !important;
+		border-width: 8px !important;
+		border-color: rgb(255, 77, 0) !important;
+
+		position: absolute;
+  		top: 50%;
+  		transform: translateY(-50%);
+		width: 100%;
+	}
+	ul#mailboxlist.treelist.listing.folderlist.notree li {
+		border-style: solid !important;
+		border-width: 6px !important;
+		border-color: white !important;
+	}
+	ul#mailboxlist.treelist.listing.folderlist.notree li a {
+		border-style: solid !important;
+		border-width: 4px !important;
+		border-color: rgb(255, 0, 238) !important;
+	}
+}
